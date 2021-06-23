@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@drawable/bg_round">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="@string/To"
+            android:textSize="20sp"
+            android:gravity="center" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/to"
+            android:background="@android:color/transparent" />
+</LinearLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/sub"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_round"
+        android:id="@+id/subject" />
+
+    <EditText
+        android:id="@+id/message"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:background="@drawable/bg_round"
+        android:gravity="top"
+        android:hint="@string/mess"
+        android:inputType="text"
+        android:padding="10dp" />
+
+    <Button
+        android:id="@+id/but"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_round"
+        android:padding="10dp"
+        android:text="@string/send"
+        android:textColor="@color/teal_700"
+        android:textSize="20sp" />
+
+</LinearLayout>
